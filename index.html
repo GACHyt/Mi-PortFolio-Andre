@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio - Andre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="photo-container">
+            <img src="Andre.jpg" alt="Andre">
+        </div>
+        <div class="header">
+            <h1>Andre (crack)</h1>
+            <p class="subtitle">Portfolio de Secundaria</p>
+        </div>
+
+        <div class="categories">
+            <button class="category-btn" onclick="showCategory('humanisticas')">Humanísticas</button>
+            <button class="category-btn" onclick="showCategory('tecnicas')">Técnicas</button>
+            <button class="category-btn" onclick="showCategory('naturales')">Ciencias Naturales</button>
+            <button class="category-btn" onclick="showCategory('sociales')">Ciencias Sociales</button>
+        </div>
+
+        <div id="humanisticas" class="content-area active">
+            <h2>Humanísticas</h2>
+            <p>Logros y proyectos en áreas Humanísticas.</p>
+            <ul class="project-list">
+                <li><strong>Proyecto 1:</strong> Descripción del proyecto...</li>
+                <li><strong>Proyecto 2:</strong> Descripción del proyecto...</li>
+                <li><strong>Proyecto 3:</strong> Descripción del proyecto...</li>
+            </ul>
+        </div>
+
+        <div id="tecnicas" class="content-area">
+            <h2>Técnicas</h2>
+            <p>Logros y proyectos en áreas Técnicas.</p>
+            <ul class="project-list">
+                <li><strong>Proyecto 1:</strong> Descripción del proyecto...</li>
+                <li><strong>Proyecto 2:</strong> Descripción del proyecto...</li>
+                <li><strong>Proyecto 3:</strong> Descripción del proyecto...</li>
+            </ul>
+        </div>
+
+        <div id="naturales" class="content-area">
+            <h2>Ciencias Naturales</h2>
+            <p>Logros y proyectos en Ciencias Naturales.</p>
+            <ul class="project-list">
+                <li><strong>Proyecto 1:</strong> Descripción del proyecto...</li>
+                <li><strong>Proyecto 2:</strong> Descripción del proyecto...</li>
+                <li><strong>Proyecto 3:</strong> Descripción del proyecto...</li>
+            </ul>
+        </div>
+
+        <div id="sociales" class="content-area">
+            <h2>Ciencias Sociales</h2>
+            <p>Logros y proyectos en Ciencias Sociales.</p>
+            <ul class="project-list">
+                <li><strong>Proyecto 1:</strong> Descripción del proyecto...</li>
+                <li><strong>Proyecto 2:</strong> Descripción del proyecto...</li>
+                <li><strong>Proyecto 3:</strong> Descripción del proyecto...</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showCategory(category) {
+            // Ocultar todas las categorías
+            const allContents = document.querySelectorAll('.content-area');
+            allContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Mostrar solo la categoría seleccionada
+            const selectedContent = document.getElementById(category);
+            selectedContent.classList.add('active');
+        }
+    </script>
+</body>
+</html>
