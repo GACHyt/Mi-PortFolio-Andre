@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff2727 0%, #ff6b16 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,12 +16,20 @@ body {
 
 .container {
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 30px;
     padding: 50px;
     max-width: 1000px;
     width: 100%;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     display: flex;
+    flex-direction: row;
+}
+
+.contein_izquierda{
+    flex: 1;
+}
+
+.botones{
+    flex: 1;
 }
 
 .header {
@@ -35,7 +43,7 @@ body {
     margin: 0 auto 30px;
     border-radius: 50%;
     overflow: hidden;
-    border: 6px solid #667eea;
+    border: 6px solid #ff2727;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -65,21 +73,26 @@ h1 {
 }
 
 .category-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff2727 0%, #ff6b16 100%);
     color: white;
     border: none;
-    padding: 20px 30px;
+    padding: 20px;
     border-radius: 15px;
     font-size: 1.1em;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    display: flex;
+    flex-direction: row;
+}
+
+.category-btn img{
+    width: 30%;
 }
 
 .category-btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 10px 25px #ff2727;
 }
 
 .category-btn:active {
@@ -111,7 +124,7 @@ h1 {
 }
 
 .content-area h2 {
-    color: #667eea;
+    color: 135deg, linear-gradient#ff2727 0%, #ff6b16 100%);
     margin-bottom: 20px;
     font-size: 2em;
 }
@@ -132,7 +145,7 @@ h1 {
     padding: 15px 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #ff2727;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
