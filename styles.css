@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    background: rgba(94, 94, 94, 0.95);
+    background: rgb(94, 94, 94);
     padding: 50px;
     max-width: 95%;
     width: 100%;
