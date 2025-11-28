@@ -41,6 +41,7 @@ body {
     width: 500px;
     height: 250px;
     margin: 0 auto 30px;
+    margin-right: 20px;
     overflow: hidden;
     border: 6px solid #ff2727;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -205,7 +206,19 @@ h1 {
     border-radius: 15px;
     width: 60%;
     max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
     position: relative;
+    object-fit: contain;
+}
+
+#modal-img{
+    max-width: 100%;
+    max-height: 50vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
 }
 
 .close-btn {
@@ -221,4 +234,8 @@ h1 {
 
 .close-btn:hover {
     color: red;
+}
+
+.project-list{
+    cursor: pointer;
 }
